@@ -22,3 +22,5 @@ About this site
 - [x] 2. Add logging output
 - [x] 3. Make the Script Executable
 - [x] 4. Use the Script
+
+#### Todo actualizado y entregado

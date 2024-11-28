@@ -11,6 +11,23 @@ git add .
 git commit -m "$1"
 
 # Push the changes to the main branch
+git push origin master
+
+# Publish to GitHub Pages using quarto
+quarto publish gh-pages --no-render --no-prompt
+
+log_message() {
+    local message="$1"
+    local timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+    echo "[${timestamp}] ${message}" >> log.txt
+}
+
+
+# Commit the changes with the provided message
+git add .
+git commit -m "$1"
+
+# Push the changes to the main branch
 git push origin QuartoBashScripting
 
 # Publish to GitHub Pages using quarto
