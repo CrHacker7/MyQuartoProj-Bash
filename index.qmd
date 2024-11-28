@@ -7,7 +7,7 @@ toc: true
 
 
 
-[Mi Repositorio GitHub ](https://github.com/CrHacker7/quartoProjectBash)
+[Mi Repositorio GitHub ](https://github.com/CrHacker7/MyQuartoProj-Bash)
 
 # Guía de Buenas Prácticas para Documentar con Quarto y Markdown
 ## Instalación y Requisitos
