@@ -8,7 +8,7 @@
 
 <meta name="author" content="CRhACKER7">
 
-<title>About – myQuartoProj-Bash</title>
+<title>myBashPage – myQuartoProj-Bash</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -94,11 +128,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./myBashPage.html"> 
+    <a class="nav-link active" href="./myBashPage.html" aria-current="page"> 
 <span class="menu-text">myBashPage</span></a>
   </li>  
 </ul>
@@ -117,17 +151,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ejercicios-del-repositorio-con-quarto" id="toc-ejercicios-del-repositorio-con-quarto" class="nav-link active" data-scroll-target="#ejercicios-del-repositorio-con-quarto">Ejercicios del repositorio con quarto</a></li>
-  <li><a href="#práctica-03-con-bash" id="toc-práctica-03-con-bash" class="nav-link" data-scroll-target="#práctica-03-con-bash">Práctica 03 con Bash</a></li>
+  <li><a href="#continuous-publishing-pipeline" id="toc-continuous-publishing-pipeline" class="nav-link active" data-scroll-target="#continuous-publishing-pipeline">Continuous Publishing Pipeline</a>
+  <ul class="collapse">
+  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation">Explanation:</a></li>
+  <li><a href="#components-of-the-if-statement" id="toc-components-of-the-if-statement" class="nav-link" data-scroll-target="#components-of-the-if-statement">Components of the If Statement</a></li>
+  <li><a href="#square-brackets" id="toc-square-brackets" class="nav-link" data-scroll-target="#square-brackets">Square Brackets (<code>[ ]</code>)</a></li>
+  <li><a href="#semicolon" id="toc-semicolon" class="nav-link" data-scroll-target="#semicolon">Semicolon (<code>;</code>)</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/CrHacker7/MyQuartoProj-Bash/edit/master/about.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/CrHacker7/MyQuartoProj-Bash/edit/master/myBashPage.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">myBashPage</h1>
 </div>
 
 
@@ -150,33 +189,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
-<section id="ejercicios-del-repositorio-con-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="ejercicios-del-repositorio-con-quarto">Ejercicios del repositorio con quarto</h3>
-<p><a href="https://github.com/AlbertProfe/DevOps_PRA/blob/master/MF01-PRA01.md">Markdown en quarto</a></p>
-<section id="apartados-por-terminar" class="level4">
-<h4 class="anchored" data-anchor-id="apartados-por-terminar">Apartados por terminar</h4>
-<ul class="task-list">
-<li><label><input type="checkbox" checked="">1. Create a Local Markdown Quarto Website</label></li>
-<li><label><input type="checkbox" checked="">2. Modify the Website</label></li>
-<li><label><input type="checkbox" checked="">3. Implement Website Navigation</label></li>
-<li><label><input type="checkbox" checked="">4. Include Mermaid Diagrams</label></li>
-<li><label><input type="checkbox" checked="">5. Configure the _quarto.yml File</label></li>
-<li><label><input type="checkbox" checked="">6. Set Up a Git Repository and Link to GitHub</label></li>
-<li><label><input type="checkbox" checked="">7. Publish the Website to GitHub Pages</label></li>
+<section id="continuous-publishing-pipeline" class="level1">
+<h1>Continuous Publishing Pipeline</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if the commit message is provided</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> <span class="ot">-z</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Please provide a commit message."</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">exit</span> 1</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit the changes with the provided message</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Push the changes to the master branch</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin master</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Publish to GitHub Pages using quarto</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages <span class="at">--no-render</span> <span class="at">--no-prompt</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="explanation" class="level2">
+<h2 class="anchored" data-anchor-id="explanation">Explanation:</h2>
+<ul>
+<li><p>The script checks if a commit message is provided. If not, it exits with an error message.</p></li>
+<li><p>It adds all changes (<code>git add .</code>), commits them with the provided message (<code>git commit -m "$1"</code>), and pushes the changes to the&nbsp;<code>master</code>&nbsp;branch (<code>git push origin master</code>).</p></li>
+<li><p>Finally, it publishes the Quarto website to GitHub Pages using&nbsp;<code>quarto publish gh-pages</code>&nbsp;with the&nbsp;<code>--no-render</code>&nbsp;and&nbsp;<code>--no-prompt</code>&nbsp;options.</p></li>
 </ul>
 </section>
-</section>
-<section id="práctica-03-con-bash" class="level3">
-<h3 class="anchored" data-anchor-id="práctica-03-con-bash">Práctica 03 con Bash</h3>
-<ul class="task-list">
-<li><label><input type="checkbox" checked="">1. Create the Bash Script</label></li>
-<li><label><input type="checkbox" checked="">2. Add logging output</label></li>
-<li><label><input type="checkbox" checked="">3. Make the Script Executable</label></li>
-<li><label><input type="checkbox" checked="">4. Use the Script</label></li>
+<section id="components-of-the-if-statement" class="level2">
+<h2 class="anchored" data-anchor-id="components-of-the-if-statement">Components of the If Statement</h2>
+<ul>
+<li><p><strong><code>if</code></strong>: This keyword begins the conditional statement.</p></li>
+<li><p><strong><code>[ -z "$1" ]</code></strong>: This is the condition being evaluated.</p>
+<ul>
+<li><strong><code>[ ]</code></strong>: These are test brackets, which are used to enclose the condition. The space between the brackets and the condition is crucial.</li>
+<li><strong><code>-z</code></strong>: This is a test operator that checks if the string that follows is empty. It returns&nbsp;<code>true</code>&nbsp;if the string is empty and&nbsp;<code>false</code>&nbsp;otherwise.</li>
+<li><strong><code>"$1"</code></strong>: This refers to the first command-line argument passed to the script. The double quotes around&nbsp;<code>$1</code>&nbsp;ensure that the argument is treated as a single word, even if it contains spaces.</li>
+</ul></li>
+<li><p><strong><code>then</code></strong>: This keyword indicates the start of the code block that will be executed if the condition is true.</p></li>
 </ul>
-<section id="todo-actualizado-y-entregado" class="level4">
-<h4 class="anchored" data-anchor-id="todo-actualizado-y-entregado">Todo actualizado y entregado</h4>
+</section>
+<section id="square-brackets" class="level2">
+<h2 class="anchored" data-anchor-id="square-brackets">Square Brackets (<code>[ ]</code>)</h2>
+<p>Square brackets are used as a synonym for the&nbsp;<code>test</code>&nbsp;command in Bash. They are primarily used for evaluating expressions and conditions within&nbsp;<code>if</code>&nbsp;statements and loops. Here are some key points about their usage:</p>
+<ul>
+<li><p><strong>Test Constructs</strong>: Square brackets are commonly used in&nbsp;<code>if</code>&nbsp;statements to evaluate conditions. For example,&nbsp;<code>[ "$VAR" -eq 2 ]</code>&nbsp;checks if the variable&nbsp;<code>VAR</code>&nbsp;is equal to 2</p></li>
+<li><p><strong>Syntax Requirements</strong>: There must be spaces between the brackets and the expression inside them. For example,&nbsp;<code>[ "$name" = 'Bob' ]</code>&nbsp;is valid, whereas&nbsp;<code>[ "$name"='Bob' ]</code>&nbsp;is not</p></li>
+<li><p><strong>Single vs.&nbsp;Double Brackets</strong>: Single square brackets (<code>[ ]</code>) are used for basic tests, while double square brackets (<code>[[ ]]</code>) offer more advanced features like pattern matching and regular expressions.</p></li>
+</ul>
+</section>
+<section id="semicolon" class="level2">
+<h2 class="anchored" data-anchor-id="semicolon">Semicolon (<code>;</code>)</h2>
+<p>The semicolon in Bash scripting is used to separate commands on the same line. It acts as a command delimiter, allowing multiple commands to be executed sequentially. Here’s how it works:</p>
+<ul>
+<li><p><strong>Command Separation</strong>: When you want to execute multiple commands in sequence on a single line, you can separate them with a semicolon. For example:bash</p>
+<p><code>echo "Hello"; echo "World"</code> This will execute both&nbsp;<code>echo</code>&nbsp;commands one after the other.</p></li>
+<li><p><strong>In Conditional Statements</strong>: In&nbsp;<code>if</code>&nbsp;statements, a semicolon can be used before the&nbsp;<code>then</code>&nbsp;keyword when writing the entire condition on a single line:bash</p>
+<p><code>if [ "$name" = 'Bob' ]; then echo "Hello Bob"; fi</code> Here, the semicolon separates the condition from the action to be taken if the condition is true.</p></li>
+</ul>
 
 
 </section>
@@ -605,4 +675,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CrHacker7/MyQuartoProj-Bash/edit/master/about.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/CrHacker7/MyQuartoProj-Bash/edit/master/myBashPage.qmd" target="_blank" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
