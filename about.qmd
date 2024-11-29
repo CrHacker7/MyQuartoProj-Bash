@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
-
 ### Ejercicios del repositorio con quarto
 [Markdown en quarto](https://github.com/AlbertProfe/DevOps_PRA/blob/master/MF01-PRA01.md)
 

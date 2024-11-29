@@ -29,3 +29,8 @@ format:
     toc: true
     extensions:
       - mermaid
+
+#publish:
+#  github:
+#    repository: "https://github.com/CrHacker7/MyQuartoProj-Bash"
+#    branch: master
