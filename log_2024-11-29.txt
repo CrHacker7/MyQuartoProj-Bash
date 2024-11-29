@@ -1,1 +1,4 @@
 2024-11-29 11:20:58 - Starting Quarto publishing process
+2024-11-29 11:20:59 - Changes committed successfully
+2024-11-29 11:20:59 - Error: Git push failed
+2024-11-29 11:25:12 - Starting Quarto publishing process

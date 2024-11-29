@@ -29,8 +29,8 @@ else
     exit 1
 fi
 
-# Push the changes to the main branch
-git push origin main
+# Push the changes to the master branch
+git push origin master
 if [ $? -eq 0 ]; then
     log_message "Changes pushed to remote repository"
 else

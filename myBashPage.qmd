@@ -17,8 +17,8 @@ fi
 git add .
 git commit -m "$1"
 
-# Push the changes to the main branch
-git push origin main
+# Push the changes to the master branch
+git push origin master
 
 # Publish to GitHub Pages using quarto
 quarto publish gh-pages --no-render --no-prompt
@@ -28,7 +28,7 @@ quarto publish gh-pages --no-render --no-prompt
 
 - The script checks if a commit message is provided. If not, it exits with an error message.
 
-- It adds all changes (`git add .`), commits them with the provided message (`git commit -m "$1"`), and pushes the changes to the `main` branch (`git push origin main`).
+- It adds all changes (`git add .`), commits them with the provided message (`git commit -m "$1"`), and pushes the changes to the `master` branch (`git push origin master`).
 
 - Finally, it publishes the Quarto website to GitHub Pages using `quarto publish gh-pages` with the `--no-render` and `--no-prompt` options.
 
@@ -50,7 +50,7 @@ Square brackets are used as a synonym for the `test` command in Bash. They are
 
 - **Test Constructs**: Square brackets are commonly used in `if` statements to evaluate conditions. For example, `[ "$VAR" -eq 2 ]` checks if the variable `VAR` is equal to 2
 
-- **Syntax Requirements**: There must be spaces between the brackets and the expression inside them. For example, `[ "$name" = 'Bob' ]` is valid, whereas `[ "$name"='Bob' ]` is not s
+- **Syntax Requirements**: There must be spaces between the brackets and the expression inside them. For example, `[ "$name" = 'Bob' ]` is valid, whereas `[ "$name"='Bob' ]` is not 
 
 - **Single vs. Double Brackets**: Single square brackets (`[ ]`) are used for basic tests, while double square brackets (`[[ ]]`) offer more advanced features like pattern matching and regular expressions.
 

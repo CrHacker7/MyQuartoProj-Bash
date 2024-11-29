@@ -61,7 +61,7 @@ Una vez instalado, puedes verificar que Quarto está correctamente instalado eje
 
     ```
         ---
-        title: "Mi Proyecto Quarto"
+        title: "Mi Proyecto Quarto-Bash"
         author: "Tu Nombre"
         output: html_document
         ---
