@@ -5,8 +5,7 @@ author: CRhACKER7
   
 
 website:
-  title: "myQuartoProj"
-  favicon: /images/home/favicon.ico
+  title: "myQuartoProj-Bash"
   back-to-top-navigation: true
 
   repo-url: https://github.com/CrHacker7/MyQuartoProj-Bash
@@ -19,7 +18,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - myPage.qmd
+      - myBashPage.qmd
 
 
   
